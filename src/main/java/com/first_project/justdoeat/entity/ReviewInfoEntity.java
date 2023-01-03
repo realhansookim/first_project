@@ -25,6 +25,6 @@ public class ReviewInfoEntity {
   @Column(name = "ri_seq") private Long riSeq;
   @Column(name = "ri_reg_dt") private LocalDate riRegDt;
   @Column(name = "ri_content") private String riContent;
-  @Column(name = "ri_oi_seq") private Long riOiSeq;
+  @Column(name = "ri_order_number") private String riOrderNumber;
   @Column(name = "ri_si_seq") private Long riSiSeq;
 }
