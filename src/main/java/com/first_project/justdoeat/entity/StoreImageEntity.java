@@ -7,7 +7,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -24,6 +25,7 @@ public class StoreImageEntity {
   @Column(name ="simg_seq") private Long simgSeq;
   @Column(name ="simg_url") private String simgUrl;
   @Column(name ="simg_order") private Integer simgOrder;
-  @Column(name ="simg_si_seq") private Long simgSiSeq;
+  // @Column(name ="simg_si_seq") private Long simgSiSeq;
+  @ManyToOne @JoinColumn(name = "simg_si_seq") StoreInfoEntity storeInfo;
 
 }

@@ -9,6 +9,8 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -26,5 +28,6 @@ public class ReviewInfoEntity {
   @Column(name = "ri_reg_dt") private LocalDate riRegDt;
   @Column(name = "ri_content") private String riContent;
   @Column(name = "ri_order_number") private String riOrderNumber;
-  @Column(name = "ri_si_seq") private Long riSiSeq;
+  // @Column(name = "ri_si_seq") private Long riSiSeq;
+  @ManyToOne @JoinColumn(name = "ri_si_seq") StoreInfoEntity storeInfo;
 }
