@@ -23,7 +23,7 @@ public class StoreInfoEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "si_seq") private Long siSeq;
-  @Column(name = "si_name") private String siNmae;
+  @Column(name = "si_name") private String siName;
   @Column(name = "si_min_delivery_time") private String siMinDeliveryTime;
   @Column(name = "si_max_delivery_time") private String siMaxDeliveryTime;
   @Column(name = "si_main_img") private String siMainImg;
@@ -31,4 +31,5 @@ public class StoreInfoEntity {
   @Column(name = "si_order_cnt") private Integer siOrderCnt;
   // @Column(name = "si_sd_seq") private Long siSdSeq;
   @OneToOne @JoinColumn(name = "si_sd_seq") StoreDetailEntity storeDetailList;
+  
 }

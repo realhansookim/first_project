@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.first_project.justdoeat.entity.ReviewImgEntity;
 
 @Repository
-public interface RebiewImgRepository extends JpaRepository <ReviewImgEntity, Long> {
+public interface ReviewImgRepository extends JpaRepository <ReviewImgEntity, Long> {
   
 }
