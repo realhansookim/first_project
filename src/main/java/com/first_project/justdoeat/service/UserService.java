@@ -21,7 +21,7 @@ import com.first_project.justdoeat.repository.StoreInfoRepository;
 import com.first_project.justdoeat.repository.UserInfoRepository;
 
 @Service
-public class StoreService {
+public class UserService {
   @Autowired AdvertisementInfoRepository adRepo;
   @Autowired DeliveryFeeInfoRepository deliveryRepo;
   @Autowired DiscountInfoRepository discountRepo;
