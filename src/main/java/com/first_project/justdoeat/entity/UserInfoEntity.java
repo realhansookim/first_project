@@ -20,13 +20,13 @@ import lombok.NoArgsConstructor;
 public class UserInfoEntity {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name ="ui_seq") private Long siSeq;
-  @Column(name ="ui_id") private String siId;
-  @Column(name ="ui_pwd") private String siPwd;
-  @Column(name ="ui_email") private String siEmail;
-  @Column(name ="ui_phone") private String siPhone;
-  @Column(name ="ui_birth") private LocalDate siBrith;
-  @Column(name ="ui_gen") private Integer siGen;
-  @Column(name ="ui_grade") private Integer siGrade;
-  @Column(name ="ui_status") private Integer siStatus;
+  @Column(name ="ui_seq") private Long uiSeq;
+  @Column(name ="ui_id") private String uiId;
+  @Column(name ="ui_pwd") private String uiPwd;
+  @Column(name ="ui_email") private String uiEmail;
+  @Column(name ="ui_phone") private String uiPhone;
+  @Column(name ="ui_birth") private LocalDate uiBrith;
+  @Column(name ="ui_gen") private Integer uiGen;
+  @Column(name ="ui_grade") private Integer uiGrade;
+  @Column(name ="ui_status") private Integer uiStatus;
 }
