@@ -9,10 +9,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
-<<<<<<< HEAD
-=======
+
 import lombok.Builder;
->>>>>>> 20386c7bc4538f07ea545fa7505d4ee1a4dc7c10
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -22,11 +20,10 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "menu_category")
 @DynamicInsert
-<<<<<<< HEAD
+
 public class MenuCategoryEntity {
   @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "mca_seq") private Long mcaSeq;;
-=======
 @Builder
 public class MenuCategoryEntity {
   @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
