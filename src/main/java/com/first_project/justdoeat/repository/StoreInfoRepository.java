@@ -7,5 +7,5 @@ import com.first_project.justdoeat.entity.StoreInfoEntity;
 
 @Repository
 public interface StoreInfoRepository extends JpaRepository<StoreInfoEntity,Long>{
-  
+  public StoreInfoEntity findBySiName(String SiName);
 }

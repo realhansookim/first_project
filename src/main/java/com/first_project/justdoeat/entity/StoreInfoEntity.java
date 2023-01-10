@@ -30,6 +30,7 @@ public class StoreInfoEntity {
   @Column(name = "si_status") private Integer siStatus;
   @Column(name = "si_order_cnt") private Integer siOrderCnt;
   // @Column(name = "si_sd_seq") private Long siSdSeq;
+  @Column(name = "si_ui_seq") private Integer siUiSeq;
   @OneToOne @JoinColumn(name = "si_sd_seq") StoreDetailEntity storeDetailList;
   
 }
