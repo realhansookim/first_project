@@ -1,5 +1,6 @@
 package com.first_project.justdoeat.service;
 
+<<<<<<< HEAD
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -10,6 +11,11 @@ import org.springframework.stereotype.Service;
 
 import com.first_project.justdoeat.entity.StoreImageEntity;
 import com.first_project.justdoeat.entity.StoreImageInfoEntity;
+=======
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+>>>>>>> 20386c7bc4538f07ea545fa7505d4ee1a4dc7c10
 import com.first_project.justdoeat.repository.AdvertisementInfoRepository;
 import com.first_project.justdoeat.repository.DeliveryFeeInfoRepository;
 import com.first_project.justdoeat.repository.DiscountInfoRepository;
@@ -23,7 +29,10 @@ import com.first_project.justdoeat.repository.ReviewScorePointRepository;
 import com.first_project.justdoeat.repository.StoreCategoryConnectRepository;
 import com.first_project.justdoeat.repository.StoreCategoryInfoRepository;
 import com.first_project.justdoeat.repository.StoreDetailRepository;
+<<<<<<< HEAD
 import com.first_project.justdoeat.repository.StoreImageInfoRepository;
+=======
+>>>>>>> 20386c7bc4538f07ea545fa7505d4ee1a4dc7c10
 import com.first_project.justdoeat.repository.StoreImageRepository;
 import com.first_project.justdoeat.repository.StoreInfoRepository;
 import com.first_project.justdoeat.repository.UserInfoRepository;
@@ -46,6 +55,7 @@ public class StoreService {
   @Autowired StoreImageRepository sImgRepo;
   @Autowired StoreInfoRepository sInfoRepo;
   @Autowired UserInfoRepository userRepo;
+<<<<<<< HEAD
   @Autowired StoreImageInfoRepository siiRepo; 
 
   public Map<String,Object> addSajangImage(StoreImageInfoEntity data, Long siImg){
@@ -62,5 +72,7 @@ public class StoreService {
     List<StoreImageInfoEntity> data = siiRepo.findTopBySiiUriOrderBySiiSeqDesc(uri);
     return data.get(0).getSiiFileName();
   }
+=======
+>>>>>>> 20386c7bc4538f07ea545fa7505d4ee1a4dc7c10
 
 }

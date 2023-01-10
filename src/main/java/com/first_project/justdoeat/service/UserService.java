@@ -1,5 +1,6 @@
 package com.first_project.justdoeat.service;
 
+<<<<<<< HEAD
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -8,6 +9,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import com.first_project.justdoeat.entity.UserInfoEntity;
+=======
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+>>>>>>> 20386c7bc4538f07ea545fa7505d4ee1a4dc7c10
 import com.first_project.justdoeat.repository.AdvertisementInfoRepository;
 import com.first_project.justdoeat.repository.DeliveryFeeInfoRepository;
 import com.first_project.justdoeat.repository.DiscountInfoRepository;
@@ -24,6 +30,7 @@ import com.first_project.justdoeat.repository.StoreDetailRepository;
 import com.first_project.justdoeat.repository.StoreImageRepository;
 import com.first_project.justdoeat.repository.StoreInfoRepository;
 import com.first_project.justdoeat.repository.UserInfoRepository;
+<<<<<<< HEAD
 import com.first_project.justdoeat.utils.ASEAlgorithm;
 import com.first_project.justdoeat.vo.LoginVo;
 
@@ -32,6 +39,10 @@ import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor
+=======
+
+@Service
+>>>>>>> 20386c7bc4538f07ea545fa7505d4ee1a4dc7c10
 public class UserService {
   @Autowired AdvertisementInfoRepository adRepo;
   @Autowired DeliveryFeeInfoRepository deliveryRepo;
@@ -50,6 +61,7 @@ public class UserService {
   @Autowired StoreInfoRepository sInfoRepo;
   @Autowired UserInfoRepository userRepo;
 
+<<<<<<< HEAD
   public UserInfoEntity getUserUiNameAndUiEmail(String uiName,String uiEmail){
     return userRepo.findByUiNameAndUiEmail(uiName, uiEmail);
   }
@@ -75,4 +87,6 @@ public class UserService {
 
 
 
+=======
+>>>>>>> 20386c7bc4538f07ea545fa7505d4ee1a4dc7c10
 }
