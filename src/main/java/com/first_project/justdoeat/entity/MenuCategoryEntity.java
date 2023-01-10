@@ -9,6 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -18,8 +19,9 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "menu_category")
 @DynamicInsert
+@Builder
 public class MenuCategoryEntity {
   @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name = "mca_seq") private Long mcaSeq;;
+  @Column(name = "mca_seq") private Long mcaSeq;
   @Column(name = "mca_name")private  String mcaName;
 }
